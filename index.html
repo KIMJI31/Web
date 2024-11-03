@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
 
@@ -16,6 +16,69 @@
 
       <!-- CSS Files -->
       <link rel="stylesheet" href="./assets/css/wave-bsb.css">
+
+      <style>
+            /*body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f4f4f9;
+            } */
+            .scanner-container {
+                text-align: center;
+                background-color: #ffffff;
+                padding: 20px 40px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                max-width: 500px;
+                width: 100%;
+            }
+            h1 {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .status {
+                margin: 20px 0;
+                font-size: 18px;
+                color: #555;
+            }
+            .scan-button {
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #007bff;
+                color: #ffffff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .scan-button:hover {
+                background-color: #0056b3;
+            }
+            .loading-spinner {
+                display: none;
+                margin-top: 20px;
+            }
+            .file-list {
+                margin-top: 20px;
+                text-align: left;
+                max-height: 300px;
+                overflow-y: auto;
+            }
+            .file-list ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .file-list li {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                color: #d9534f;
+            }
+        </style>
 
       <!-- Favicon and Touch Icons -->
       <link rel="icon" type="image/png" sizes="512x512" href="./icon/ctd.jpg">
@@ -72,14 +135,15 @@
                                                       data-bs-target="#offcanvasNavbar">profile</a>
                                           </li>
                                           <li class="nav-item">
-                                                <a class="nav-link" href="#scrollspyHighlight" data-bs-dismiss="offcanvas"
+                                                <a class="nav-link" href="#scrollspyHighlight"
+                                                      data-bs-dismiss="offcanvas"
                                                       data-bs-target="#offcanvasNavbar">highlight</a>
                                           </li>
                                           <li class="nav-item">
                                                 <a class="nav-link" href="#scrollspyLogin" data-bs-dismiss="offcanvas"
                                                       data-bs-target="#offcanvasNavbar">Login</a>
                                           </li>
-                                          
+
 
                                     </ul>
                               </div>
@@ -115,141 +179,141 @@
             <!-- Service 3 - Bootstrap Brain Component -->
             <section id="scrollspyPortfolio" class="py-5 py-xl-8 bsb-section-py-xxl-1">
                   <div class="container mb-5 mb-md-6 mb-xl-10">
-                    <div class="row justify-content-md-center">
-                         <h2 class="h1 mb-3">Portfolio</h2>
-                    </div>
+                        <div class="row justify-content-md-center">
+                              <h2 class="h1 mb-3">Portfolio</h2>
+                        </div>
                   </div>
-            
-                  <div class="container overflow-hidden">
-                    <div class="row gy-2 g-md-2 g-xl-3 bsb-project-2-grid">
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./Photo/5 Girl.png"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">5 Girls</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./Photo/Goku.png"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Goku</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./Photo/Kaneki.jpg"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Kaneki</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./Photo/Kurumi4.jpg"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Kurumi</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./Photo/Maid.jpg"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Maid</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./Photo/Shadow.png"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Cid cakeno</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./Photo/Sukuna.png"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Sukuna</h3>
-                            </figcaption>
-                          
-                        </figure>
-                      </div>
-            
-                      <div class="col-12 col-md-4 bsb-project-2-item">
-                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                          <a href="#!">
-                            <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./Photo/Your name.png"
-                              alt="">
-                          </a>
-                          <figcaption>
-                              <h3 class="text-white bsb-hover-fadeInLeft">Your name</h3>
-                            </figcaption>
 
-                          
-                                
-                              </figure>
-                            </div>
-                            <div class="col-12 col-md-4 bsb-project-2-item">
-                              <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
-                                <a href="#!">
-                                  <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./Photo/Itachi.png"
-                                    alt="">
-                                </a>
-                                <figcaption>
-                                    <h3 class="text-white bsb-hover-fadeInLeft">Itachi</h3>
-                                  </figcaption>
-      
-                                
-                                      
+                  <div class="container overflow-hidden">
+                        <div class="row gy-2 g-md-2 g-xl-3 bsb-project-2-grid">
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale-up bsb-hover-scale"
+                                                      src="./Photo/5 Girl.png" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">5 Girls</h3>
+                                          </figcaption>
+
                                     </figure>
-                                  </div>
-                          
-                        </figure>
-                      </div>
-                    </div>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale bsb-hover-scale-up"
+                                                      src="./Photo/Goku.png" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Goku</h3>
+                                          </figcaption>
+
+                                    </figure>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale-up bsb-hover-scale"
+                                                      src="./Photo/Kaneki.jpg" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Kaneki</h3>
+                                          </figcaption>
+
+                                    </figure>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale bsb-hover-scale-up"
+                                                      src="./Photo/Kurumi4.jpg" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Kurumi</h3>
+                                          </figcaption>
+
+                                    </figure>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale bsb-hover-scale-up"
+                                                      src="./Photo/Maid.jpg" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Maid</h3>
+                                          </figcaption>
+
+                                    </figure>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale bsb-hover-scale-up"
+                                                      src="./Photo/Shadow.png" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Cid cakeno</h3>
+                                          </figcaption>
+
+                                    </figure>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale-up bsb-hover-scale"
+                                                      src="./Photo/Sukuna.png" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Sukuna</h3>
+                                          </figcaption>
+
+                                    </figure>
+                              </div>
+
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale-up bsb-hover-scale"
+                                                      src="./Photo/Your name.png" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Your name</h3>
+                                          </figcaption>
+
+
+
+                                    </figure>
+                              </div>
+                              <div class="col-12 col-md-4 bsb-project-2-item">
+                                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                                          <a href="#!">
+                                                <img class="img-fluid bsb-scale-up bsb-hover-scale"
+                                                      src="./Photo/Itachi.png" alt="">
+                                          </a>
+                                          <figcaption>
+                                                <h3 class="text-white bsb-hover-fadeInLeft">Itachi</h3>
+                                          </figcaption>
+
+
+
+                                    </figure>
+                              </div>
+
+                              </figure>
+                        </div>
                   </div>
-                </section>
-                                                  
-                                    
-                        
+                  </div>
+            </section>
+
+
+
 
             </section>
 
@@ -352,36 +416,99 @@
             <section id="scrollspyHighlight" class="py-5 py-xl-8 bsb-section-py-xxl-1">
                   <div class="container mb-5 mb-md-6 ">
                         <h2 class="h1 mb-3">Highlight</h2>
-                        <iframe width="100%" height="900"src="https://www.youtube.com/embed/gbimYTQGRtU?si=T0oTA6q1cwDcRrNt?">
+                        <iframe width="100%" height="900"
+                              src="https://www.youtube.com/embed/gbimYTQGRtU?si=T0oTA6q1cwDcRrNt?">
                         </iframe>
-                  </div>        
+                  </div>
 
             </section>
 
             <!-- Section - Login -->
+             
+            <center>
+                  <div class="scanner-container">
+                        <h1>Virus Scanner</h1>
+                        <div class="status" id="status">Ready to scan</div>
+                        <button class="scan-button" id="scanButton" onclick="startScan()">Scan Downloads Folder</button>
+                        <div class="loading-spinner" id="spinner">🔄 Scanning...</div>
+                        <div class="file-list" id="fileList"></div>
+                    </div>
+            </center>
+                    
+                    <script>
+                        async function startScan() {
+                            const statusText = document.getElementById("status");
+                            const scanButton = document.getElementById("scanButton");
+                            const spinner = document.getElementById("spinner");
+                            const fileList = document.getElementById("fileList");
+                    
+                            // ตั้งค่า UI ระหว่างการสแกน
+                            statusText.textContent = "Scanning downloads folder for viruses...";
+                            scanButton.disabled = true;
+                            spinner.style.display = "block";
+                            fileList.innerHTML = "";
+                    
+                            // ระบุ URL ของ API บน Render
+                            const apiUrl = "https://your-api.onrender.com/scan";
+                            let downloadsPath = "";
+                
+                            if (navigator.platform.startsWith("Win")) {
+                                downloadsPath = `C:/Users/${getUsername()}/Downloads`;
+                            } else {
+                                downloadsPath = "~/Downloads";
+                            }
+                    
+                            try {
+                                // คำสั่ง fetch request ไปยัง API
+                                const response = await fetch(apiUrl, {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json"
+                                    },
+                                    body: JSON.stringify({ directory: downloadsPath })
+                                });
+                    
+                                // ประมวลผลผลลัพธ์ของการสแกน
+                                const result = await response.json();
+                                if (result.hasVirus) {
+                                    statusText.textContent = "Virus found in the following files:";
+                                    
+                                    const ul = document.createElement("ul");
+                                    result.infectedFiles.forEach(file => {
+                                        const li = document.createElement("li");
+                                        li.textContent = file;
+                                        ul.appendChild(li);
+                                    });
+                                    fileList.appendChild(ul);
+                                } else {
+                                    statusText.textContent = "No viruses found!";
+                                }
+                            } catch (error) {
+                                console.error("Error scanning for viruses:", error);
+                                statusText.textContent = "Error occurred during scanning.";
+                            } finally {
+                                scanButton.disabled = false;
+                                spinner.style.display = "none";
+                                scanButton.textContent = "Scan Again";
+                            }
+                        }
+                
+                        function getUsername() {
+                            return "username"; // เปลี่ยนเป็นชื่อผู้ใช้หรือ fetch ตามจริง
+                        }
+                    </script>
+            <!-- Javascript Files: Vendors -->
+            <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+            <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+            <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+            <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+            <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-            <section id="scrollspyLogin" class="py-5 py-xl-8 bsb-section-py-xxl-1">
-                  <div class="container mb-5 mb-md-6 ">
-                        <h2 class="h1 mb-3">Login</h2>
-                        <center>
-                              <iframe src="login.html" width="100%" height="850"></iframe>
-                        </center>
-                  </div>      
+            <!-- Javascript Files: Controllers -->
+            <script src="./assets/controller/project-2.js"></script>
+            <script src="./assets/controller/wave-bsb.js"></script>
 
-            </section>           
-
-                         <!-- Javascript Files: Vendors -->
-  <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-  <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Javascript Files: Controllers -->
-  <script src="./assets/controller/project-2.js"></script>
-  <script src="./assets/controller/wave-bsb.js"></script>
-
-  <!-- BSB Body End -->
+            <!-- BSB Body End -->
 
 
 </body>
